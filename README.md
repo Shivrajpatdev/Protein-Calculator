@@ -37,7 +37,17 @@ No installation is required.
 5. Save the settings.
 6. GitHub will provide a public website link after deployment.
 
-## (like📸)
+## 📸 Screenshot
+
+### Protein Calculator
+![Protein Calculator](assets/Screenshot 2026-09-17 104415.png)
+
+### Protein Calculation
+![Protein Result]
+
+### Food Reference Table
+![Food Table]
+
 ## 📊 Nutrition Data
 
 The calculator uses approximate protein values per 100 g as a reference. Nutrition values can vary depending on food variety, brand, raw/cooked state, water content and preparation method.
@@ -48,7 +58,8 @@ For authoritative nutrition information, see the [USDA FoodData Central](https:/
 
 **Important:** This tool is for general educational estimation and is not medical or dietary advice.
 
-## Live Demo
+## 🌐 Live Demo
+
  [Click here]( https://shivrajpatdev.github.io/Protein-Calculator/)
 
 ## 📁 Project Structure
