@@ -47,10 +47,6 @@ For authoritative nutrition information, see the [USDA FoodData Central](https:/
 
 **Important:** This tool is for general educational estimation and is not medical or dietary advice.
 
-## 🤖 AI Assistance
-
-AI tools were used to assist with code generation, structure, debugging ideas and documentation. The project should be reviewed, tested and understood by the project owner before being presented as their work.
-
 ## 📁 Project Structure
 
 ```text
