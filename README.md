@@ -47,6 +47,9 @@ For authoritative nutrition information, see the [USDA FoodData Central](https:/
 
 **Important:** This tool is for general educational estimation and is not medical or dietary advice.
 
+## Live Demo
+ [Click here]( https://shivrajpatdev.github.io/Protein-Calculator/)
+
 ## 📁 Project Structure
 
 ```text
