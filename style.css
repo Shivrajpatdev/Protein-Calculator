@@ -1,0 +1,282 @@
+:root {
+  --bg: #f6f8f7;
+  --card: #ffffff;
+  --text: #17201c;
+  --muted: #69756f;
+  --border: #e2e8e4;
+  --accent: #176b4d;
+  --accent-dark: #0f5039;
+  --accent-soft: #e8f4ee;
+  --shadow: 0 14px 40px rgba(20, 45, 34, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 52px 0 36px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.badge,
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--accent-soft);
+  border: 1px solid #d4eadf;
+  border-radius: 999px;
+  padding: 7px 11px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 7vw, 4rem);
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+  margin-bottom: 22px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: -0.025em;
+}
+
+.pill {
+  background: #f0f3f1;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+select,
+input {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--text);
+  padding: 0 14px;
+  font: inherit;
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: end;
+  margin-top: 16px;
+}
+
+.number-wrap {
+  position: relative;
+}
+
+.number-wrap input {
+  padding-right: 38px;
+}
+
+.number-wrap span {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.primary-btn {
+  min-height: 48px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  padding: 0 22px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--accent-dark);
+}
+
+.primary-btn:focus-visible {
+  outline: 3px solid #a9d8c4;
+  outline-offset: 2px;
+}
+
+.result {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 18px;
+  background: var(--accent-soft);
+  border: 1px solid #d4eadf;
+  display: grid;
+  gap: 3px;
+}
+
+.result-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.result strong {
+  font-size: clamp(2rem, 7vw, 3.1rem);
+  letter-spacing: -0.045em;
+  color: var(--accent-dark);
+}
+
+.result span:last-child {
+  color: var(--muted);
+}
+
+.info-card {
+  overflow: hidden;
+}
+
+.muted,
+.source-note {
+  color: var(--muted);
+}
+
+.table-wrap {
+  margin-top: 22px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+th,
+td {
+  padding: 13px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: #f7f9f8;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+td:last-child,
+th:last-child {
+  text-align: right;
+  font-weight: 800;
+}
+
+.category {
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  padding: 6px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: min(100% - 20px, 960px);
+    padding-top: 30px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-btn {
+    width: 100%;
+  }
+}
