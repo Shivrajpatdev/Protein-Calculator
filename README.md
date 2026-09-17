@@ -40,13 +40,13 @@ No installation is required.
 ## 📸 Screenshot
 
 ### Protein Calculator
-![Protein Calculator](assets/Screenshot 2026-09-17 104415.png)
+![Protein Calculator](assets/calculator.png)
 
 ### Protein Calculation
-![Protein Result]
+![Protein Result](assets/result.png)
 
 ### Food Reference Table
-![Food Table]
+![Food Table](assets/food-table.png)
 
 ## 📊 Nutrition Data
 
