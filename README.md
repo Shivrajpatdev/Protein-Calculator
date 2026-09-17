@@ -37,6 +37,7 @@ No installation is required.
 5. Save the settings.
 6. GitHub will provide a public website link after deployment.
 
+## (like📸)
 ## 📊 Nutrition Data
 
 The calculator uses approximate protein values per 100 g as a reference. Nutrition values can vary depending on food variety, brand, raw/cooked state, water content and preparation method.
