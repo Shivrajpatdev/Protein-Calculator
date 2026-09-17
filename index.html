@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple protein calculator for estimating protein from common foods.">
+  <title>Protein Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge">NUTRITION TOOL</div>
+      <h1>Protein Calculator</h1>
+      <p>Choose a food, enter its weight, and instantly estimate how much protein it contains.</p>
+    </header>
+
+    <section class="card calculator-card" aria-labelledby="calculator-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CALCULATE</p>
+          <h2 id="calculator-title">How much protein?</h2>
+        </div>
+        <span class="pill">30 foods</span>
+      </div>
+
+      <form id="proteinForm">
+        <label for="food">Food</label>
+        <select id="food" required></select>
+
+        <div class="input-row">
+          <div class="field">
+            <label for="grams">Amount</label>
+            <div class="number-wrap">
+              <input id="grams" type="number" min="1" max="10000" step="1" value="100" required>
+              <span>g</span>
+            </div>
+          </div>
+          <button type="submit" class="primary-btn">Calculate</button>
+        </div>
+      </form>
+
+      <div id="result" class="result" aria-live="polite">
+        <span class="result-label">Estimated protein</span>
+        <strong id="proteinValue">—</strong>
+        <span id="resultDescription">Enter an amount to calculate.</span>
+      </div>
+    </section>
+
+    <section class="card info-card">
+      <div>
+        <p class="eyebrow">REFERENCE</p>
+        <h2>Protein per 100 g</h2>
+        <p class="muted">Values are approximate and can vary by variety, brand, preparation, and cooking method.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>Category</th>
+              <th>Protein / 100 g</th>
+            </tr>
+          </thead>
+          <tbody id="foodTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Protein Calculator</strong> · Built with HTML, CSS & JavaScript</p>
+      <p class="source-note">Nutrition values are approximate reference values. See README for data-source notes.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
